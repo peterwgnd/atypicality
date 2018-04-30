@@ -32,9 +32,9 @@ let attr_texts = {
     // Major except the bridge?
     `“Believe” gets a slightly below average 48 percent valence score. We might agree with that based on the lyrics (“I really don't think it’s strong”), but the algorithm only has access to the raw audio of the song, not the liner notes. Its assessment of valence comes from the song‘s sound.`,
    `I would tend to agree that “Believe” doesn't sound like sunshine and rainbows, but it's hard to say exactly why. It's commonly observed that songs in a 
-      <a href="https://www.youtube.com/watch?v=-9YopDo5_xU">major key</a>
+      <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-9YopDo5_xU">major key</a>
       tend to sound more upbeat and positive than those written in a 
-      <a href="https://www.youtube.com/watch?v=jcA--c2U4Wg">minor key</a>,
+      <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=jcA--c2U4Wg">minor key</a>,
       but “Believe” is in the key of G major, so the answer isn’t that simple.`,
       `Maybe there’s just something unsettling about the alien, artificial sound of those synth pads? Or maybe it’s something in the harmonies. The arpeggiated chord played after the first line of the chorus sounds a bit wonky: it's a major seventh, inverted such that the first two notes are separated by a semitone&#8202;-&#8202;an extremely dissonant interval. Or maybe it’s just Cher’s eerily robotic voice.`
     // Other Cher songs that share this property. Half-breed. Dark lady.

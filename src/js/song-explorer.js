@@ -29,12 +29,11 @@ class SongExplorer {
     this.root = d3.select(rootsel);
     this.margin = {top: 20, right: 20, bottom: 50, left: 20};
 
-    let default_song = this.songdat[50];
+    let default_song = this.songdat[0];
     this.decade = default_song.decade;
     this.year = default_song.year;
-
-    // Set up the main 'picker' controls (for selecting decade, year, and ultimately song)
     this.setupControls();
+    // Set up the main 'picker' controls (for selecting decade, year, and ultimately song)
     // A container for the radar chart and associated elements (e.g. heading)
     this.songView = this.root.append('div').classed('song-view', true);
     this.songChart = new SongChart(this.songView);
@@ -44,7 +43,7 @@ class SongExplorer {
       .classed('moreby', true)
       .classed('picker', true)
       .style('display', 'none')
-    moreby.append('span').classed('label', true);
+    moreby.append('h4').classed('label', true);
     moreby.append('span').classed('songs', true);
     this.moreby = moreby;
     let simsongs = this.moreSongs.append('div')
@@ -205,7 +204,7 @@ class SongExplorer {
       this.moreby.style('display', 'none');
     } else {
       this.moreby.style('display', 'initial');
-      this.moreby.select('.label').text(`More by ${this.song.artist}: `);
+      this.moreby.select('.label').text(`More by ${this.song.artist}`);
       this.populateSongs(this.moreby.select('.songs'), same_artist);
     }
 
