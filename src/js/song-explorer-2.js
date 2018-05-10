@@ -82,7 +82,17 @@ class SongExplorer {
     .text(decade => decade+'s')
     .on('click', decade => this.setDecade(decade))
 
-    this.year_picker = picker.append(picker_ele_type).classed('year-picker', true);
+    this.year_picker = picker.append(this.compact ? 'select' : picker_ele_type)
+      .classed('year-picker', true);
+    if (this.compact) {
+      this.year_picker.on('change', () => {
+        this.years_for_decade()
+      });
+      this.dummy_year_option = this.song_picker.append('option')
+      .classed('dummy', true)
+      .attr('disabled', true)
+      .html('select a year', true);
+    }
     this.updateYears();
 
     this.song_picker = picker.append(this.compact ? 'select' : picker_ele_type)

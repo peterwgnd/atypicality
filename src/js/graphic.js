@@ -34,7 +34,7 @@ function init() {
   // whatever browserify autorefresh thing? bleh.
 
   // XXX
-  d3.select('#intro-text').on('click', () => jumpTo(select('#song-explorer')));
+  // d3.select('#intro-text').on('click', () => jumpTo(select('#song-explorer')));
 }
 init = init.bind(glob)
 
