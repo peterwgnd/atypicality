@@ -8,7 +8,7 @@ let attr_texts = {
   tempo: [
     `<b>Tempo</b> is the simplest, most primitive sonic feature in our toolbox. It’s just the speed of the song. “Believe” clocks in at a moderately fast 133 beats per minute.`,
     // TODO: should confirm legitimacy of these explanations of failure modes
-    `Computers are generally pretty good at guessing a song's tempo (“Believe”’s official sheet music gives the tempo as a “moderate disco beat” of 132 bpm&#8202;—&#8202;not bad!). But when they do fail, they tend to fail pretty spectacularly. The most common failure mode is to guess half the actual tempo (e.g., because of a weak second and fourth beat), or double it (e.g., because of a strong hi-hat on the eigth notes).`
+    `Computers are generally good at guessing a song's tempo (“Believe”’s official sheet music gives the tempo as a “moderate disco beat” of 132 bpm&#8202;—&#8202;not bad!). But when they do fail, they tend to fail pretty spectacularly. The most common cause of failure is that the algorithm guesses half the actual tempo (e.g., because of a weak second and fourth beat), or doubles it (e.g., because of a strong hi-hat on the eigth notes).`
   ],
   energy: [
     `<b>Energy</b> is a measure of a track’s “intensity.” This might seem similar to danceability, but a song can be energetic (fast, loud, noisy), but undanceable because of a disjointed or weak beat.`,
@@ -30,7 +30,7 @@ let attr_texts = {
   valence: [
     `Finally, <b>valence</b> is one of the most high-level, abstract features used. It represents the “positiveness” of the track. That is, is listening to it likely to make you happy? Or does it have more of a sad, dark vibe?`,
     // Major except the bridge?
-    `“Believe” gets a slightly below average 48 percent valence score. We might agree with that based on the lyrics (“I really don't think it’s strong”), but the algorithm only has access to the raw audio of the song, not the liner notes. Its assessment of valence comes from the song‘s sound.`,
+    `“Believe” gets a slightly below average 48 percent valence score. We might agree with that based on the lyrics, but the algorithm only has access to the raw audio of the song, not the liner notes. Its assessment of valence comes from the song’s sound.`,
    `I would tend to agree that “Believe” doesn't sound like sunshine and rainbows, but it's hard to say exactly why. It's commonly observed that songs in a 
       <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-9YopDo5_xU">major key</a>
       tend to sound more upbeat and positive than those written in a 

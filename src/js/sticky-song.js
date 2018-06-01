@@ -216,7 +216,7 @@ class YearSlider {
       .attr('transform', `translate(0, ${this.y})`)
     marker.append('text')
       .classed('year', true)
-      .attr('filter', `url(#highlight${cls == 'contrast' ? '-contrast' : ''}`)
+      //.attr('filter', `url(#highlight${cls == 'contrast' ? '-contrast' : ''}`)
       .attr('y', 0)
     return marker
   }

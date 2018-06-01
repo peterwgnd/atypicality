@@ -53,7 +53,13 @@ main#content
     text-align center
     $fs = 2rem
     font-size $fs
-
+    
+    &:after, &:before
+      content: "—";
+      font-weight: 400;
+      margin: 0.5rem;
+      display: inline-block;
+      vertical-align: middle;
 
   code
     font-family monospace
