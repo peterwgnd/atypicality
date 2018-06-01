@@ -2,12 +2,15 @@
 	margin 0 auto
 	padding 4rem 1rem 1.5rem 1rem
 	text-align center
+	
+	+mq(mobile)
+		padding 1rem
 
 	&__hed
 		font-family copernicus,georgia,serif
 		max-width 60rem
 		margin 0 auto
-		padding-top 5rem
+		padding-top 2rem
 		font-weight bold
 		set-type-size('xx-large', true)
 		+mq('bp-2')
@@ -34,5 +37,21 @@
 	&__dek
 		max-width $column-width
 		margin 0 auto
-		padding-top 1.5rem
+		padding-top 2.5rem
 		set-type-size('medium', true)
+		
+a.jump-link
+	text-decoration none
+	text-align center
+	
+	div
+		cursor pointer
+		border-radius 4px
+		background-color $contrast_color
+		color #fff
+		font-weight 700
+		padding 1rem
+		margin 2rem auto
+		max-width 220px
+		+mq(mobile)
+			max-width 75%

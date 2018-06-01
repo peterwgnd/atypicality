@@ -2,7 +2,7 @@ $debug-cards = false
 
 card()
   #main-prose
-    p.step, div.card, p.card, div.step.spacer
+    p.step, div.card, p.card, div.step.spacer,div.player
       {block}
 
 // Same as above, but don't apply margins
@@ -10,11 +10,16 @@ cardish()
   #main-prose
     p, div.card
       {block}
+      
+p.step
+  +mq(mobile)
+    border-top 1px solid #e8e8e8
+    border-bottom 1px solid #e8e8e8
   
 // Default card bottom margin (desktop)
 $p = 160px
 +cardish()
-  padding:1rem
+  padding:1rem 0
   background #fff
   opacity .4
   if $debug-cards

@@ -102,9 +102,9 @@ class RadarChart {
 
   _setupDummyWebs() {
     // Create a dummy web for each standard class
-    this._plotPoints(this.root, this._dummyPoints, 'contrast');
-    this._plotPoints(this.root, this._dummyPoints, 'focal');
     this._plotPoints(this.root, this._dummyPoints, 'baseline');
+    this._plotPoints(this.root, this._dummyPoints, 'focal');
+    this._plotPoints(this.root, this._dummyPoints, 'contrast');
   }
 
   setSonicHighlights(sonics) {

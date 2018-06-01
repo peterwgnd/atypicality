@@ -21,6 +21,10 @@
 
 h3.songchart-title
   min-height 48px
+  
+.radar
+  +mq(mobile)
+    padding-top:1rem;
 
 .picker
   a
@@ -34,7 +38,7 @@ h3.songchart-title
     background-color: $focal_color
     color: #fff
     font-weight: bold
-  a:hover, a:focus
+  a:hover
     background-color: $contrast_color
     color: #fff
     font-weight: bold
@@ -48,4 +52,9 @@ select.song-picker
   width 100%
   border-radius 0
   background-color #e8e8e8
+  font-family polaris, helvetica, sans-serif
+  
+.moreby.picker, .simsongs.picker, .simsongs-future.picker
+    +mq(mobile)
+      display none !important
   
