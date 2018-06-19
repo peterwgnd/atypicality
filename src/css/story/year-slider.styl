@@ -9,14 +9,13 @@ $height = 70px
     font-family Polaris, Helvetica, sans-serif
     font-weight bold
 
-  $shift = 9
+  $shift = 9px
   .marker.focal text.year
-    alignment-baseline baseline
-    baseline-shift $shift
+    transform translateY(-1*$shift)
     fill $focal_color
   .marker.contrast text.year
     alignment-baseline hanging
-    baseline-shift (-1*$shift)
+    transform translateY($shift)
     fill $contrast_color
   .marker.hidden
     opacity 0
