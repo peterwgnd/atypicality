@@ -3,7 +3,7 @@
   "subtitle": "60 Years of #1 Songs",
   "description": "When it comes to climbing the charts, research suggests that it pays to be different. From Brenda Lee to Beyoncé, here’s how the top songs stood out from the crowd.",
   "url" : "https://www8.gsb.columbia.edu/articles/projects/what-makes-a-hit",
-  "img" : "assets/atypicality-gif.gif",
+  "img" : "./assets/atypicality-gif.gif",
   "author": {
     "name": "Colin Morris",
     "url": "https://twitter.com/HalfEatenScone",
